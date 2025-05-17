@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exportar CV a PDF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #3498db;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    
+    .method {
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    .method h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    
+    ol {
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    .button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cómo exportar tu CV a PDF</h1>
+  
+  <div class="method">
+    <h2>Método 1: Imprimir a PDF desde tu navegador</h2>
+    <ol>
+      <li>Abre el archivo <a href="index.html">index.html</a> en tu navegador.</li>
+      <li>Presiona <strong>Ctrl+P</strong> (Windows/Linux) o <strong>Cmd+P</strong> (Mac) para abrir el diálogo de impresión.</li>
+      <li>En el menú desplegable de "Destino" o "Impresora", selecciona "Guardar como PDF".</li>
+      <li>Asegúrate de que la opción "Gráficos de fondo" esté activada (en Chrome, está en "Más configuración").</li>
+      <li>Haz clic en "Guardar" y elige dónde guardar el archivo PDF.</li>
+    </ol>
+    <a href="index.html" class="button">Abrir el CV</a>
+  </div>
+  
+  <div class="method">
+    <h2>Método 2: Usar una herramienta online</h2>
+    <ol>
+      <li>Abre el archivo <a href="index.html">index.html</a> en tu navegador.</li>
+      <li>Asegúrate de que se vea correctamente y que estés satisfecho con su apariencia.</li>
+      <li>Ve a <a href="https://www.web2pdfconvert.com/" target="_blank">Web2PDF Converter</a> o <a href="https://pdfcrowd.com/html-to-pdf/" target="_blank">PDFCrowd</a>.</li>
+      <li>Copia la URL completa de tu archivo HTML local o sube el archivo HTML directamente.</li>
+      <li>Configura las opciones de conversión según tus preferencias.</li>
+      <li>Haz clic en "Convertir" y descarga el PDF generado.</li>
+    </ol>
+  </div>
+  
+  <div class="method">
+    <h2>Método 3: Usar el script de conversión (para usuarios técnicos)</h2>
+    <ol>
+      <li>Asegúrate de tener <a href="https://nodejs.org/" target="_blank">Node.js</a> instalado en tu sistema.</li>
+      <li>Abre una terminal o línea de comandos en la carpeta donde está tu CV.</li>
+      <li>Ejecuta el archivo batch <code>generate-pdf.bat</code> haciendo doble clic sobre él.</li>
+      <li>Espera a que se complete el proceso. El PDF se guardará como <code>CV-Jose-Giles.pdf</code>.</li>
+    </ol>
+    <p><strong>Nota:</strong> Este método requiere Chrome instalado en tu sistema y podría necesitar configuración adicional dependiendo de tu entorno.</p>
+  </div>
+</body>
+</html> 
