@@ -265,12 +265,13 @@ const translations = {
       "Implemented event-driven architecture patterns for real-time inventory updates and order processing",
       "Integrated with AWS services for transactional email (email templates) and file storage management (S3)",
       "Developed a custom reporting module with Google Sheets API integration, enabling real-time export and synchronization of assessment data for client analysis and visualization",
+      "Implemented secure payment processing using Stripe API, including subscription management, payment intents, and webhook handling for asynchronous payment events",
       "Modeled and managed the application's database using PostgreSQL",
       "Actively participated throughout the full software development lifecycle, from conception to deployment and maintenance",
-      "Key technologies used: Java 17, Angular 17, AWS (SES, S3), PostgreSQL, Event-Driven Architecture, Google Cloud Platform (GCP), Google Sheets API"
+      "Key technologies used: Java 17, Angular 17, AWS (SES, S3), PostgreSQL, Event-Driven Architecture, Google Cloud Platform (GCP), Google Sheets API, Stripe Payment API"
     ],
     job1ProjectTitle: "E-Commerce Assessment Platform",
-    job1ProjectDesc: "Architected and implemented a scalable assessment e-commerce platform that manages product catalogs, secure payments, and digital delivery of assessment materials. Implemented a microservices architecture focused on high availability and security compliance.",
+    job1ProjectDesc: "Architected and implemented a scalable assessment e-commerce platform that manages product catalogs, secure payments via Stripe, and digital delivery of assessment materials. Implemented a microservices architecture focused on high availability and security compliance.",
     
     // Job 2 - Tecso
     job2Title: "Fullstack Developer - Tecso",
@@ -382,12 +383,13 @@ const translations = {
       "Implementé patrones de arquitectura dirigida por eventos para actualizaciones de inventario y procesamiento de pedidos en tiempo real",
       "Integré con servicios AWS para correo electrónico transaccional (plantillas de correo) y gestión de almacenamiento de archivos (S3)",
       "Desarrollé un módulo de informes personalizado con integración de Google Sheets API, permitiendo la exportación y sincronización en tiempo real de datos de evaluación para análisis y visualización de clientes",
+      "Implementé procesamiento seguro de pagos utilizando la API de Stripe, incluyendo gestión de suscripciones, intents de pago y manejo de webhooks para eventos de pago asíncronos",
       "Modelé y gestioné la base de datos de la aplicación usando PostgreSQL",
       "Participé activamente en todo el ciclo de vida del desarrollo de software, desde la concepción hasta el despliegue y mantenimiento",
-      "Tecnologías principales utilizadas: Java 17, Angular 17, AWS (SES, S3), PostgreSQL, Arquitectura dirigida por eventos, Google Cloud Platform (GCP), Google Sheets API"
+      "Tecnologías principales utilizadas: Java 17, Angular 17, AWS (SES, S3), PostgreSQL, Arquitectura dirigida por eventos, Google Cloud Platform (GCP), Google Sheets API, API de Pagos Stripe"
     ],
     job1ProjectTitle: "Plataforma de Evaluación E-Commerce",
-    job1ProjectDesc: "Arquitectura e implementación de una plataforma escalable de comercio electrónico para evaluaciones que gestiona catálogos de productos, pagos seguros y entrega digital de materiales de evaluación. Implementé una arquitectura de microservicios enfocada en alta disponibilidad y cumplimiento de seguridad.",
+    job1ProjectDesc: "Arquitectura e implementación de una plataforma escalable de comercio electrónico para evaluaciones que gestiona catálogos de productos, pagos seguros a través de Stripe y entrega digital de materiales de evaluación. Implementé una arquitectura de microservicios enfocada en alta disponibilidad y cumplimiento de seguridad.",
     
     // Job 2 - Tecso
     job2Title: "Desarrollador Fullstack - Tecso",
