@@ -197,24 +197,31 @@ header {
 }
 
 .timeline {
-  width: 90px;
+  width: 110px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .timeline::after {
   content: '';
   position: absolute;
-  top: 10px;
-  bottom: -20px;
+  top: 20px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  background-color: #dddddd;
+  background: linear-gradient(to bottom, 
+    rgba(41, 128, 185, 0.1),
+    rgba(41, 128, 185, 0.4) 20%,
+    rgba(41, 128, 185, 0.4) 80%,
+    rgba(41, 128, 185, 0.1)
+  );
   z-index: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(41, 128, 185, 0.15);
 }
 
 .job:last-child .timeline::after {
@@ -222,31 +229,87 @@ header {
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #2980b9;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border: 2px solid #2980b9;
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #2980b9;
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.1),
+              0 0 15px rgba(41, 128, 185, 0.2);
   margin-top: 5px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.job:hover .dot {
+  transform: scale(1.2);
+  border-color: #3498db;
+  box-shadow: 0 0 0 4px rgba(41, 128, 185, 0.15),
+              0 0 20px rgba(41, 128, 185, 0.3);
+}
+
+.job:hover .dot::before {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
 }
 
 .job-date {
-  margin-top: 8px;
-  font-size: 0.8em;
-  color: #777;
+  margin-top: 12px;
+  font-size: 0.75em;
+  color: #666;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
   position: relative;
   z-index: 1;
-  background-color: #f0f0f0;
-  padding: 4px 10px;
-  border-radius: 15px;
+  background: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
   text-align: center;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid rgba(41, 128, 185, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s ease;
+  letter-spacing: 0.5px;
+}
+
+.job:hover .job-date {
+  background: #2980b9;
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.2);
+  transform: translateY(-2px);
+  letter-spacing: 0.8px;
 }
 
 .job-details {
@@ -287,13 +350,13 @@ header {
 }
 
 .job-details li::before {
-  content: '›';
+  content: '•';
   color: #2980b9;
   font-weight: bold;
   position: absolute;
   left: 0;
-  font-size: 1.1em;
-  top: 1px;
+  font-size: 1.6em;
+  top: -0.1em;
 }
 
 /* Edit Mode Button - Mantener estos estilos solo por si se usa el modo secreto de edición */
@@ -386,7 +449,7 @@ header {
   
   .timeline {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     align-items: flex-start;
     margin-right: 0;
   }
@@ -401,7 +464,7 @@ header {
   
   .job-date {
     margin-left: 0;
-    padding-left: 8px;
+    padding: 4px 12px;
     text-align: left;
     margin-right: 0;
     width: auto;
@@ -501,24 +564,29 @@ header {
     print-color-adjust: exact;
   }
   
-  .timeline::after, .dot {
-    display: none !important;
+  .timeline::after {
+    background: #000 !important;
+    box-shadow: none !important;
   }
+  
+  .dot {
+    background: #fff !important;
+    border-color: #000 !important;
+    box-shadow: none !important;
+  }
+  
+  .dot::before {
+    background: #000 !important;
+  }
+  
+  .dot::after {
+    background-color: #fff !important;
+  }
+  
   .job-date {
-      font-size: 9pt !important;
-      color: #333 !important;
-      background-color: transparent !important;
-      box-shadow: none !important;
-      padding: 0 !important;
-      margin-top: 0 !important;
-      margin-bottom: 5px !important;
-  }
-  .job {
-      padding: 10px 0 !important;
-      box-shadow: none !important;
-      border-radius: 0 !important;
-      background-color: transparent !important;
-      margin-bottom: 20px !important;
+    background: none !important;
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
   }
   
   a {
