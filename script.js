@@ -259,7 +259,7 @@ const translations = {
     job1Location: "United States (Remote)",
     job1Date: "Jan 2024 - Present",
     job1Responsibilities: [
-      "Led the end-to-end development of a new E-Commerce application, leveraging a modern and scalable technology stack",
+      "Worked on the end-to-end development of a new E-Commerce application, leveraging a modern and scalable technology stack",
       "Designed and implemented the core backend architecture using Java 17, handling business logic and primary database interactions",
       "Built the frontend with Angular 17, creating a responsive and intuitive user interface for the E-Commerce platform",
       "Implemented event-driven architecture patterns for real-time inventory updates and order processing",
@@ -377,7 +377,7 @@ const translations = {
     job1Location: "Estados Unidos (Remoto)",
     job1Date: "Ene 2024 - Presente",
     job1Responsibilities: [
-      "Lideré el desarrollo completo de una nueva aplicación de comercio electrónico, utilizando una pila tecnológica moderna y escalable",
+      "Trabajé en el desarrollo completo de una nueva aplicación de comercio electrónico, utilizando una pila tecnológica moderna y escalable",
       "Diseñé e implementé la arquitectura backend principal usando Java 17, manejando la lógica de negocio y las interacciones con la base de datos",
       "Construí el frontend con Angular 17, creando una interfaz de usuario responsiva e intuitiva para la plataforma de comercio electrónico",
       "Implementé patrones de arquitectura dirigida por eventos para actualizaciones de inventario y procesamiento de pedidos en tiempo real",
